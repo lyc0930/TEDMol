@@ -7,7 +7,7 @@ import utils
 from qm9 import losses
 import time
 import torch
-from MoLa import text2mol, prepare_reference
+from multi_modal_conversion import text2mol, prepare_reference
 
 
 def train_epoch(args, loader, epoch, model, model_dp, model_ema, ema, device, dtype, property_norms, optim,
